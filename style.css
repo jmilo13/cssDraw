@@ -1,0 +1,157 @@
+:root {
+  --skin: #f6c09c;
+  --shadow-skin: #ee927d;
+  --background: #ed4042;
+  --red: #ed2860;
+  --dark-red: #680524;
+  --black: #00243a;
+  --white: #fff;
+  --ear: #ea686a;
+}
+body {
+  margin: 0;
+}
+.container {
+  background: var(--background);
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+.head {
+  position: relative;
+  width: 110px;
+  height: 200px;
+  background: var(--skin);
+  border-radius: 50px;
+  transform: scale(2);
+}
+.eye-left,
+.eye-right,
+.pupile-left,
+.pupile-right,
+.nose,
+.beard,
+.mouth,
+.teeth,
+.tongue,
+.neck,
+.ear-left,
+.ear-right {
+  position: absolute;
+}
+.eye-left,
+.eye-right {
+  width: 30px;
+  height: 20px;
+  background: var(--white);
+  top: 35%;
+  border-radius: 0 0 50% 50%;
+}
+.eye-left {
+  left: 23%;
+}
+.eye-right {
+  right: 23%;
+}
+.pupile-left,
+.pupile-right {
+  width: 5px;
+  height: 5px;
+  background: var(--black);
+  border-radius: 50%;
+  top: calc(35% + 5px);
+}
+.pupile-left {
+  left: calc(23% + 13px);
+}
+.pupile-right {
+  right: calc(23% + 13px);
+}
+.nose {
+  width: 33px;
+  height: 33px;
+  background: var(--skin);
+  top: 45%;
+  left: calc(50% - 15px);
+  border-radius: 50%;
+  z-index: 2;
+}
+.beard {
+  width: 110px;
+  height: 130px;
+  background: var(--black);
+  bottom: -26px;
+  border-radius: 40px 40px 55px 55px;
+}
+.mouth {
+  width: 50px;
+  height: 25px;
+  background: var(--dark-red);
+  border-radius: 0 0 80px 80px;
+  top: 65%;
+  left: calc(50% - 25px);
+}
+.teeth {
+  width: 40px;
+  height: 9px;
+  background: var(--white);
+  top: 65%;
+  left: 27%;
+  border-radius: 1px 0 5px 5px;
+}
+.tongue {
+  width: 20px;
+  height: 11px;
+  background: var(--red);
+  top: 72%;
+  left: 32%;
+  border-radius: 0 5px 0 100%;
+}
+.neck {
+  width: 80px;
+  height: 50px;
+  background: var(--shadow-skin);
+  bottom: -40px;
+  left: calc(50% - 40px);
+}
+.ear-left,
+.ear-right {
+  width: 20px;
+  height: 30px;
+  background: var(--shadow-skin);
+  top: 35%;
+}
+.ear-left {
+  left: -20px;
+  border-radius: 50% 0 0 50%;
+}
+.ear-right {
+  right: -20px;
+  border-radius: 0 50% 50% 0;
+}
+.ear-back {
+  position: absolute;
+  width: 13px;
+  height: 3px;
+  background: var(--ear);
+  border-radius: 5px;
+  top: 42%;
+}
+.ear-back.one {
+  transform: rotate(45deg);
+  left: -12px;
+}
+.ear-back.two {
+  transform: rotate(-45deg);
+  left: -12px;
+}
+.ear-back.three {
+  transform: rotate(45deg);
+  right: -12px;
+}
+.ear-back.four {
+  transform: rotate(-45deg);
+  right: -12px;
+}
